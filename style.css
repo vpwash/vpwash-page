@@ -1,0 +1,35 @@
+:root {
+  color-scheme: light;
+}
+
+.hide-on-small-screen {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hide-on-small-screen {
+    display: none;
+  }
+}
+
+.hide-on-large-screen {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .hide-on-large-screen {
+    display: none;
+  }
+}
+.center {
+  align-content: center;
+  margin-bottom: 0;
+}
+.olive {
+  background-color: #636b2f;
+  --pico-border-color: #636b2f;
+}
+.olive-switch {
+  --pico-switch-checked-background-color: #636b2f;
+  --pico-switch-checked-background-color: #636b2f;
+}
