@@ -2,81 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <data value=""></data>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
-    <title>Welcome | VPWash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="VPWash - Your application hub" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>VPWash - Application Hub</title>
   </head>
   <body>
+    <!-- Full width header -->
+    <header class="full-width">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><img src="images/vpwash_no_bg.png" alt="VPWash Logo" width="120" class="logo"></li>
+          </ul>
+          <ul class="hide-on-large-screen">
+            <li>
+              <details class="dropdown">
+                <summary role="button" class="olive">Menu</summary>
+                <ul>
+                  <li><a href="#apps">Apps</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><button id="mobile-theme-toggle" class="contrast" style="width: 100%; text-align: left; padding: 0.5rem 1rem;">
+                    <span class="theme-icon">🌓</span> Toggle Theme
+                  </button></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <ul class="hide-on-small-screen">
+            <li><a href="#apps" class="contrast">Apps</a></li>
+            <li><a href="#about" class="contrast">About</a></li>
+            <li>
+              <button id="theme-toggle" class="contrast" aria-label="Toggle theme">
+                <span class="theme-icon">🌓</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <main class="container">
-      <nav>
-        <ul class="center">
-          <li>
-            <img src="images/vpwash_no_bg.png" alt="VPWash Logo" width="100">
-          </li>
-        </ul>
-        <ul class="hide-on-large-screen center"><li><details class="dropdown">
-            <summary role="button" class="olive">Menu</summary>
-            <ul>
-              <li>
-                <a
-                  href="#"
-                  class="contrast"
-                  >PDF</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="contrast"
-                  >Images</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="contrast"
-                  >Docuseal</a
-                >
-              </li>
-            </ul></li></Ul>
-        
-        </details>
-        <ul class="hide-on-small-screen center">
-          <li>
-            <a
-              href="#"
-              class="contrast"
-              >PDF</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="contrast"
-              >Images</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="contrast"
-              >Docuseal</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to VPWash</h1>
+          <p>Your central hub for all applications and tools</p>
+        </div>
+      </section>
+
+      
+      <section id="apps" class="apps-section">
+        <h2>Available Applications</h2>
+        <div class="grid">
+          <article class="app-card">
+            <div class="app-icon">📄</div>
+            <h3>PDF Tools</h3>
+            <p>Manage and process your PDF documents with ease.</p>
+            <a href="https://pdf.vpwash.net/" role="button" class="olive">Open PDF Tools</a>
+          </article>
+          
+          <article class="app-card">
+            <div class="app-icon">🔄</div>
+            <h3>File and Image Converter</h3>
+            <p>Convert your files and images with ease.</p>
+            <a href="https://convertx.vpwash.net/" role="button" class="olive">ConvertX</a>
+          </article>
+          
+          <article class="app-card">
+            <div class="app-icon">📝</div>
+            <h3>Ministry Tracker</h3>
+            <p>Keep track of your ministry contacts.</p>
+            <a href="https://ministry.vpwash.net/" role="button" class="olive">Ministry Tracker</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <h2>About VPWash</h2>
+        <p>VPWash provides a suite of tools to help you manage your digital content. Our applications are designed to be simple, efficient, and user-friendly.</p>
+      </section>
     </main>
+
+    <!-- Full width footer -->
+    <footer class="full-width">
+      <div class="container">
+        <small>© 2025 VPWash. All rights reserved.</small>
+      </div>
+    </footer>
+    <script src="theme.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
